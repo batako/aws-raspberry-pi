@@ -16,7 +16,7 @@ data "aws_ami" "base" {
 }
 
 resource "aws_security_group" "dev" {
-  name        = "webdev"
+  name        = var.ec2_name
   description = "To check the operation of the created AMI"
   vpc_id      = data.aws_vpc.default.id
 
@@ -60,10 +60,10 @@ locals {
 module "ec2_cluster" {
   source                 = "./modules/terraform-aws-ec2-instance"
 
-  name                   = "blockly"
+  name                   = var.ec2_name
   ami                    = data.aws_ami.base.id
   instance_type          = "t2.micro"
-  key_name               = "aws-dev"
+  key_name               = var.ec2_key
   monitoring             = true
   vpc_security_group_ids = [aws_security_group.dev.id]
   subnet_ids             = [local.subnet_id]

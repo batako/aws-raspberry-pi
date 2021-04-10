@@ -26,3 +26,13 @@ variable "route53_record_name" {
   type        = string
   description = "The domain name to which the IP is assigned"
 }
+
+variable "ec2_name" {
+  type        = string
+  description = "EC2 Name"
+}
+
+variable "key_pair_name" {
+  type        = string
+  description = "Key Pair Name"
+}
