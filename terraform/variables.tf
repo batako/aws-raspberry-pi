@@ -12,6 +12,11 @@ variable "base_ami_name" {
   description = "Name to search for the base AMI"
 }
 
+variable "sg_name" {
+  type        = string
+  description = "Security group name"
+}
+
 variable "my_cidr_block" {
   type        = string
   description = "Allow CIDR BLOCK when using SSH"

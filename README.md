@@ -17,6 +17,7 @@ cat > ./terraform/terraform.tfvars << EOF
 aws_region          = "ap-northeast-1"
 aws_profile         = "automan"
 base_ami_name       = "raspberry-pi-dev_*"
+sg_name             = "security-group-name"
 my_cidr_block       = "xxx.xxx.xxx.xxx/32"
 route53_zone_name   = "my-domain"
 route53_record_name = "my-sub-domain"

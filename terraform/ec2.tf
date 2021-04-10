@@ -16,7 +16,7 @@ data "aws_ami" "base" {
 }
 
 resource "aws_security_group" "dev" {
-  name        = var.ec2_name
+  name        = var.sg_name
   description = "To check the operation of the created AMI"
   vpc_id      = data.aws_vpc.default.id
 
