@@ -63,7 +63,7 @@ module "ec2_cluster" {
   name                   = var.ec2_name
   ami                    = data.aws_ami.base.id
   instance_type          = "t2.micro"
-  key_name               = var.ec2_key
+  key_name               = var.key_pair_name
   monitoring             = true
   vpc_security_group_ids = [aws_security_group.dev.id]
   subnet_ids             = [local.subnet_id]
