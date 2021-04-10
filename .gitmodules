@@ -1,0 +1,6 @@
+[submodule "terraform/modules/terraform-aws-vpc"]
+	path = terraform/modules/terraform-aws-vpc
+	url = https://github.com/terraform-aws-modules/terraform-aws-vpc.git
+[submodule "terraform/modules/terraform-aws-ec2-instance"]
+	path = terraform/modules/terraform-aws-ec2-instance
+	url = https://github.com/terraform-aws-modules/terraform-aws-ec2-instance.git
