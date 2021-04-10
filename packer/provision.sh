@@ -20,9 +20,11 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 mkdir $HOME/.local
 git clone https://github.com/b4b4r07/enhancd.git $HOME/.local/enhancd
 git clone https://github.com/junegunn/fzf.git $HOME/.local/fzf
+echo y | $HOME/.local/fzf/install
 cat > $HOME/.zshrc << 'EOF'
 # ------------------------------
 # 定数定義
@@ -62,9 +64,9 @@ source $HOME/.oh-my-zsh/oh-my-zsh.sh
 source ~/.local/enhancd/init.sh
 
 # fzf
-# git clone https://github.com/junegunn/fzf.git ~/.local/fzf
-# ~/.local/fzf/install
-[ -f ~/.local/fzf.zsh ] && source ~/.local/fzf.zsh
+# git clone https://github.com/junegunn/fzf.git $HOME/.local/fzf
+# echo y | $HOME/.local/fzf/install
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
 
 # ------------------------------
