@@ -6,8 +6,8 @@ timedatectl set-timezone Asia/Tokyo
 localectl set-locale LANG=ja_JP.utf8
 
 # Change the color of the prompt
-sudo echo "export PS1='\[\033[01;36m\]\u@\H\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '" >> /etc/profile
-sudo echo "export PS1='\[\033[01;31m\]\u@\H\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\\$ '" >> /root/.bashrc
+sudo sh -c "echo \"export PS1='\[\033[01;36m\]\u@\H\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '\" >> /etc/profile"
+sudo sh -c "echo \"export PS1='\[\033[01;31m\]\u@\H\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]# '\" >> /root/.bashrc"
 
 # zsh
 sudo yum install -y \
