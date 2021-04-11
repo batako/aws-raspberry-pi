@@ -35,7 +35,7 @@ export ZSH_THEME="robbyrussell"
 export RPROMPT="%m"
 
 # Oh My Zsh
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 
 # ------------------------------
@@ -57,16 +57,16 @@ plugins=(
   # git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
   zsh-completions
 )
-source $HOME/.oh-my-zsh/oh-my-zsh.sh
+source ~/.oh-my-zsh/oh-my-zsh.sh
 
 # enhancd
-# git clone https://github.com/b4b4r07/enhancd.git $HOME/.local/enhancd
+# git clone https://github.com/b4b4r07/enhancd.git ~/.local/enhancd
 source ~/.local/enhancd/init.sh
 
 # fzf
-# git clone https://github.com/junegunn/fzf.git $HOME/.local/fzf
-# echo y | $HOME/.local/fzf/install
-[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+# git clone https://github.com/junegunn/fzf.git ~/.local/fzf
+# echo y | ~/.local/fzf/install
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
 # ------------------------------
