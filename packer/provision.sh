@@ -37,6 +37,8 @@ export RPROMPT="%m"
 # Oh My Zsh
 export ZSH=~/.oh-my-zsh
 
+# Docker
+export DOCKER_BUILDKIT=1
 
 # ------------------------------
 # 設定
@@ -47,6 +49,8 @@ autoload -Uz compinit && compinit
 
 # Oh My Zsh
 plugins=(
+  docker
+  docker-compose
   git
   # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   zsh-autosuggestions
