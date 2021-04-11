@@ -12,7 +12,7 @@ variable "base_ami_name" {
   description = "Name to search for the base AMI"
 }
 
-variable "sg_name" {
+variable "security_group_name" {
   type        = string
   description = "Security group name"
 }

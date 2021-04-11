@@ -16,7 +16,7 @@ data "aws_ami" "base" {
 }
 
 resource "aws_security_group" "dev" {
-  name        = var.sg_name
+  name        = var.security_group_name
   description = "To check the operation of the created AMI"
   vpc_id      = data.aws_vpc.default.id
 
