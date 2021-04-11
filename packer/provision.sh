@@ -21,11 +21,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
-mkdir $HOME/.local
-git clone https://github.com/b4b4r07/enhancd.git $HOME/.local/enhancd
-git clone https://github.com/junegunn/fzf.git $HOME/.local/fzf
-echo y | $HOME/.local/fzf/install
-cat > $HOME/.zshrc << 'EOF'
+mkdir ~/.local
+git clone https://github.com/b4b4r07/enhancd.git ~/.local/enhancd
+git clone https://github.com/junegunn/fzf.git ~/.local/fzf
+echo y | ~/.local/fzf/install
+cat > ~/.zshrc << 'EOF'
 # ------------------------------
 # 定数定義
 # ------------------------------
